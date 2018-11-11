@@ -1,5 +1,3 @@
-import './app.scss'
-
 tag App
   def render
     <self>
