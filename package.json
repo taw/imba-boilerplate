@@ -24,7 +24,7 @@
     "css-loader": "^1.0.1",
     "express": "^4.16.2",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "imba": "1.4.8",
+    "imba": "1.5.2",
     "normalize-scss": "^7.0.1",
     "style-loader": "^0.23.1",
     "webpack-dev-server": "^3.7.1"
