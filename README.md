@@ -2,6 +2,8 @@
 
 Webpack boilerplate for imba and sass, with CSS normalize preloaded.
 
+This is experimental branch for prerelease Imba 2 version.
+
 ## Install dependencies
 
 ```
@@ -10,12 +12,10 @@ npm install
 
 ### Run in development mode
 
-```
-npm run dev
-```
+*(not currently working)*
 
 ### Build
 
 ```
-npm run build
+npm run build && npm run xbuild
 ```

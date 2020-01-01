@@ -13,7 +13,11 @@
   "scripts": {
     "dev": "webpack-dev-server --mode=development --content-base dist/",
     "build": "webpack --mode=production",
-    "watch": "webpack --watch --progress --colors --display-modules"
+    "watch": "webpack --watch --progress --colors --display-modules",
+    "check-version": "imbac --version",
+
+    "xbuild": "imbac --standalone src/app.imba -o dist",
+    "xwatch": "imbac -w --standalone src/app.imba -o dist"
   },
   "repository": {
     "type": "git",
