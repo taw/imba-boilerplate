@@ -1,4 +1,4 @@
-let ExtractTextPlugin = require('extract-text-webpack-plugin');
+let MiniCssExtractPlugin = require('mini-css-extract-plugin');
 
 module.exports = {
   module: {
@@ -9,10 +9,11 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        use: ExtractTextPlugin.extract({
-          fallback: 'style-loader',
-          use: ['css-loader', 'sass-loader']
-        })
+        use: [
+          MiniCssExtractPlugin.loader,
+          "css-loader",
+          "sass-loader",
+        ]
       }
     ],
   },
@@ -22,6 +23,6 @@ module.exports = {
   entry: ["./src/app.imba", "./src/app.scss"],
   output: {  path: __dirname + '/dist', filename: "app.js" },
   plugins: [
-    new ExtractTextPlugin('app.css')
+    new MiniCssExtractPlugin({filename: 'app.css'})
   ]
 }
