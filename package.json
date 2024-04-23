@@ -22,7 +22,7 @@
   "license": "MIT",
   "dependencies": {
     "css-loader": "^5.2.7",
-    "gh-pages": "^4.0.0",
+    "gh-pages": "^5.0.0",
     "imba": "1.5.2",
     "mini-css-extract-plugin": "^1.6.2",
     "node-sass": "^8.0.0",
